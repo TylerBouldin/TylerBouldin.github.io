@@ -1,0 +1,46 @@
+/* Structure*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(safariBackground.webp);
+    background-size:cover;
+}
+
+div#content{
+    background-color: darkseagreen;
+    width: 70%;
+    margin: auto; /*center*/
+    padding: 1%;  /*get text away from sides*/
+    border-radius: 5px;
+}
+
+/* table */
+
+table{
+    border-collapse:collapse;
+}
+
+td, th{
+    border: 1px solid red;
+    padding: 5px 10px; /* top and bottom 5  left and right 10*/
+}
+th{
+    background-color: aqua;
+    color: black;
+}
+/* images*/
+
+#giraffe-pic{
+    box-shadow: 7px 7px navy;
+}
+
+
+/* Typography*/
+
+h1{
+    color: darkred;
+}
+
+h2{
+    color: green;
+}
