@@ -37,8 +37,8 @@ th{
 
 /* Typography*/
 
-h1{
-    color: darkred;
+#header{
+    color: blue;
 }
 
 h2{
