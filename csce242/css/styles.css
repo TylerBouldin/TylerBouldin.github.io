@@ -27,8 +27,40 @@ body{
 #assignmentsHeader{
     color: beige;
 }
+#basicCss,
 #basicHtml,
 #githubLink{
     color:saddlebrown;
     text-decoration: none;
 }
+#toppage{
+    background: url(../assignments/02css/images/e40a2147-williams-brice-stadium-endzone-day.webp);
+    background-size: cover;
+}
+#middlepage{
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    padding: 1% 2%;
+    box-shadow: 3px 3px 3px 3px;
+    border-radius: 5px;
+    color:white;
+}
+#BballPic,
+#CockyPic{  
+    border: 5px solid maroon;
+    display: block;
+    padding: 1% 2%;
+    margin: 10px auto;
+}
+
+#tableGame{
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 2px 5px;
+    border: 5px solid maroon;
+    
+}
+
