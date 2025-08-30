@@ -2,37 +2,54 @@
 <html lang="en">
 
 <head>
-    <title>Tyler Bouldin</title>
+    <title>Tyler Bouldin - CSCE 242</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body id="mainpage">
-    <div id="main">
-    <h1><div id="header">
-        CSCE 242: Web Applications
-    </div></h1>
+    <header>
+        <h1 id="header">CSCE 242: Web Applications</h1>
+        <h2 id="nameHeader">Tyler Bouldin</h2>
+    </header>
 
-    <h2><div id="nameHeader">
-        Tyler Bouldin
-    </div></h2>
+    <main>
+        <h2 id="assignmentsHeader">Assignments</h2>
+        
+        <div class="assignments-container">
+            <div class="assignment-card">
+                <h3>Basic HTML</h3>
+                <div class="assignment-image">
+                    <img src="assignments/01html/images/lakePicture.jpeg" alt="Basic HTML Assignment Screenshot">
+                </div>
+                <p>This assignment went into the very basics of HTML programming. After learning about tags including head body, a simple website page was put together about lakes. Other methods of HTMl code was also used such as lists, tables, and images.</p>
+                <a href="assignments/01html/index.html" class="assignment-link">View Assignment</a>
+            </div>
 
-    <p>Web Applications is a college class designed to teach students the basics about making a website. The class dives
-        into the format and programming aspect of websites.</p>
+            <div class="assignment-card">
+                <h3>Basic CSS</h3>
+                <div class="assignment-image">
+                    <img src="assignments/02css/images/gamecockwomenpic.webp" alt="Basic CSS Assignment Screenshot">
+                </div>
+                <p>In the basic CSS assignment I learned how to style a website using CSS. It was very interesting to play around with a websites colors, images, background, and overall style. I decided to choose the Gamecocks as my topic and styled everything with UofSC colors.</p>
+                <a href="assignments/02css/index.html" class="assignment-link">View Assignment</a>
+            </div>
 
-    <h4>
-        <a id="githubLink" href="https://github.com/TylerBouldin/TylerBouldin.github.io/tree/main/csce242">GitHub</a>
-    </h4>
+            <div class="assignment-card">
+                <h3>Page Layout</h3>
+                <div class="assignment-image">
+                    <img src="assignments/03layout/screenshot.png" alt="Page Layout Assignment Screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="placeholder-image" style="display: none;">300 x 150</div>
+                </div>
+                <a href="assignments/03layout/index.html" class="assignment-link">View Assignment</a>
+            </div>
+        </div>
+    </main>
 
-    <h2><div id="assignmentsHeader">
-        Assignments
-    </div></h2>
-
-    <ul>
-        <li><a id="basicHtml" href="assignments/01html/index.html">Basic HTML</a></li>
-        <li><a id="basicCss" href="assignments/02css/index.html">Basic CSS</a></li>
-       
-    </ul>
-    </div>
+    <footer>
+        <p><a id="githubLink" href="https://github.com/TylerBouldin/TylerBouldin.github.io/tree/main/csce242">GitHub Repository</a></p>
+    </footer>
+    
 </body>
 
 </html>

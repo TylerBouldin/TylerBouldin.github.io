@@ -64,3 +64,177 @@ td, th{
     
 }
 
+/* New styles for homepage layout - added to preserve existing assignment styles */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#header {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#nameHeader {
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+#assignmentsHeader {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.assignments-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.assignment-card {
+    background-color: #e6f3ff;
+    border: 2px solid #b3d9ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-card h3 {
+    color: #2c5aa0;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.assignment-image {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.assignment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-image {
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.assignment-card p {
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+}
+
+.assignment-link {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.assignment-link:hover {
+    background-color: #357abd;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+}
+
+#githubLink {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#githubLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .assignments-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .assignment-card {
+        max-width: 100%;
+        min-width: 280px;
+    }
+    
+    #header {
+        font-size: 2rem;
+    }
+    
+    #nameHeader {
+        font-size: 1.3rem;
+    }
+    
+    #assignmentsHeader {
+        font-size: 1.7rem;
+    }
+    
+    main {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .assignment-card {
+        min-width: 250px;
+        padding: 1rem;
+    }
+    
+    .assignment-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .assignment-image {
+        height: 120px;
+    }
+}
+

@@ -1,0 +1,84 @@
+body{
+    background:#365902;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.columns{
+    display: flex;
+}
+
+
+#content{
+    width: 50%;
+    margin: auto;
+    background:#EDF257;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-header{
+    background: #6E8C03;
+    color:white;
+    border-radius: 5px ;
+    padding:5px;
+}
+
+
+
+#main-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#main-nav li{
+    border-bottom: 1px solid white;
+    
+}
+
+/*main nav*/
+#main-nav li, #main-nav li:first-child{
+    border:none;
+}
+
+#main-nav a:hover{
+    background:#6E8C03;
+    color: white ;
+    border-bottom: 1px solid white; 
+
+
+}
+
+
+
+#main-nav a{
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    
+    border-bottom: 1px solid #fff;
+}
+
+
+#main-nav a:hover{
+    background: white;
+    color:#6E8C03;
+}
+
+
+h1{
+    text-align:center;
+}
+
+
+
+/* larger devices */
+@media only screen and (min-width: 768px){
+    body{
+        background: url(images/treee.jpg);
+        background-size: cover;
+    }
+}
