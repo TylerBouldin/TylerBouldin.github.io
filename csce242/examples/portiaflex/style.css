@@ -1,5 +1,18 @@
+:root{
+    --primary-color:#4F5902;
+    --secondary-color:#595924;
+    --tertiary-color:#365902;
+    --quaternary-color:#8B4513;
+    --quinary-color:#D2691E;
+    --senary-color:#FFD700;
+    --septenary-color:#FFA500;
+    --octonary-color:#FF8C00;
+}
+
+
+
 body {
-    background:#4F5902;
+    background:var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
