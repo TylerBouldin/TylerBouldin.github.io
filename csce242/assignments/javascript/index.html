@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 - Introduction to JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assignment 7</h1>
+            <h2>Introduction to JavaScript</h2>
+        </header>
+
+        <main class="three-column-layout">
+            <!-- Column 1: Sunny Times -->
+            <div class="column" id="sunny-times-column">
+                <h3>Sunny Times</h3>
+                <div class="content" id="sunny-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Column 2: Select A Color -->
+            <div class="column" id="color-column">
+                <h3>Select A Color:</h3>
+                <input type="color" id="color-picker" value="#ff0000">
+                <div class="color-display" id="color-display">
+                    <div class="color-preview" id="color-preview"></div>
+                    <p class="color-code" id="color-code">Color Code: #ff0000</p>
+                </div>
+            </div>
+
+            <!-- Column 3: Image Change -->
+            <div class="column" id="image-column">
+                <h3>Image Change</h3>
+                <button id="sunny-button">Become Sunny</button>
+                <div class="image-container">
+                    <img id="weather-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjMzM2NkNDIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNDAiIHI9IjIwIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSI4MCIgY3k9IjMwIiByPSIxNSIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNTAiIHI9IjE4IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxNTAiIGN5PSIzNSIgcj0iMTIiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjE4MCIgY3k9IjQ1IiByPSIxNCIgZmlsbD0id2hpdGUiLz4KPC9zdmc+" alt="Cloudy Weather">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>@TylerBouldin.com</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
