@@ -86,6 +86,13 @@ main {
 .sad {
     color:purple;
 }
+.error{
+    color:red;
+}
+
+input{
+    max-width:100px;
+}
 
 .sub-section a {
     text-decoration:none;
@@ -102,6 +109,15 @@ main {
 }
 
 /* Animations */
+#ball{
+    background:#2B91AD;
+    height:30px;
+    width:30px;
+    border-radius:50px;
+    position:relative;
+    left:35%;
+}
+
 #animation-fun {
     background:#a0ccd8;
     padding:20px;

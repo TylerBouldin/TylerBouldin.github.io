@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 - If Statements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="assignment-header">
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-icon">▼</span>
+            </button>
+            
+            <nav class="exercise-nav">
+                <ul>
+                    <li><a href="#" id="exercise1" class="nav-link">Exercise 1</a></li>
+                    <li><a href="#" id="exercise2" class="nav-link">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="planting-section" class="exercise-section">
+            <div class="exercise-content">
+                <h3>How many days has it been since watering your plant?</h3>
+                
+                <div class="slider-container">
+                    <input type="range" id="daysSlider" min="1" max="12" value="1" class="slider">
+                    <div class="slider-labels">
+                        <span>1</span>
+                        <span>12</span>
+                    </div>
+                </div>
+                
+                <div class="plant-display">
+                    <div id="plantIcon" class="plant-icon">🌱</div>
+                    <div id="plantMessage" class="plant-message">
+                        <p id="daysText">It's been 1 days since watering your plant</p>
+                        <p id="statusText">Your plant is healthy and happy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clock-section" class="exercise-section hidden">
+            <div class="exercise-content">
+                <div class="clock-display">
+                    <h3>Our Digital Clock</h3>
+                    <div id="timeDisplay" class="time-display">10:00 am</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>TylerBouldin.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

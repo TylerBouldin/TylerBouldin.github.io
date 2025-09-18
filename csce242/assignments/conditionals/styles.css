@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: #f5f5dc;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.assignment-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.assignment-header h1 {
+    color: #2c7a7a;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.assignment-header h2 {
+    color: #e74c3c;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.exercise-nav {
+    margin-bottom: 20px;
+}
+
+.exercise-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.exercise-nav li {
+    position: relative;
+}
+
+.exercise-nav li:not(:last-child)::after {
+    content: "|";
+    color: #666;
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: #2c7a7a;
+    background-color: rgba(44, 122, 122, 0.1);
+}
+
+.nav-link.active {
+    color: #2c7a7a;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    color: #2c7a7a;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.menu-icon {
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.open .menu-icon {
+    transform: rotate(180deg) !important;
+}
+
+.exercise-section {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 300px;
+}
+
+.exercise-section.hidden {
+    display: none;
+}
+
+.exercise-content {
+    text-align: center;
+}
+
+.exercise-content h3 {
+    color: #2c7a7a;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    margin: 30px 0;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2c7a7a;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2c7a7a;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.plant-display {
+    margin-top: 30px;
+}
+
+.plant-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.plant-message {
+    color: #2c7a7a;
+    line-height: 1.6;
+}
+
+.plant-message p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.clock-display {
+    padding: 40px 0;
+}
+
+.clock-display h3 {
+    color: #2c7a7a;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: normal;
+}
+
+.footer {
+    text-align: center;
+    color: #2c7a7a;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .assignment-header h1 {
+        font-size: 2em;
+    }
+    
+    .assignment-header h2 {
+        font-size: 1.5em;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .exercise-nav {
+        display: none;
+    }
+    
+    .exercise-nav.show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        padding: 10px 0 0 0;
+        z-index: 1000;
+        min-width: 150px;
+        margin-top: 40px;
+    }
+    
+    .exercise-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .exercise-nav li:not(:last-child)::after {
+        content: "";
+    }
+    
+    .exercise-nav li:not(:last-child)::before {
+        content: "";
+    }
+    
+    .exercise-nav.show .nav-link {
+        display: block;
+        padding: 5px 0;
+        width: auto;
+        text-align: left;
+        color: #2c7a7a;
+        font-size: 1em;
+    }
+}
+
+.plant-healthy {
+    color: #27ae60;
+}
+
+.plant-needs-water {
+    color: #f39c12;
+}
+
+.plant-wilting {
+    color: #e74c3c;
+}
+
+.plant-dead {
+    color: #7f8c8d;
+}
