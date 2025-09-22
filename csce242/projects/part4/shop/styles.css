@@ -1,0 +1,238 @@
+/* CSS Variables */
+:root {
+    --primary-blue: #0066cc;
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #f0f0f0;
+    --dark-gray: #333333;
+    --border-color: #0066cc;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    border: 2px solid var(--border-color);
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-blue);
+    padding: 20px;
+    color: var(--dark-gray);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: var(--dark-gray);
+}
+
+.envelope {
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+/* Navigation styles */
+nav {
+    background-color: var(--black);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--dark-gray);
+}
+
+/* Main content styles */
+main {
+    background-color: var(--white);
+    padding: 30px;
+    min-height: 70vh;
+    overflow-y: auto;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-wrapper h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content-wrapper > p {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Shop Grid Layout */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.shop-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    border: 2px solid var(--light-gray);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.shop-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.item-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    margin: 10px 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    border: 2px solid var(--white);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-price {
+    color: var(--primary-blue);
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: var(--light-gray);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px;
+    }
+    
+    .shop-item {
+        min-height: 200px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
