@@ -3,7 +3,9 @@
     
     <head>
         <title>About Us - The Pickleball Guys</title>
+        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="styles.css">
+        <script src="../script.js"></script>
     </head>
 
     <body>
@@ -18,7 +20,12 @@
         </header>
 
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../how-to-play/index.html">How To Play</a></li>
                 <li><a href="../shop/index.html">Shop</a></li>
@@ -49,10 +56,23 @@
         
         <footer>
             <div class="footer-content">
-                <h3>Contact The Pickleball Guys</h3>
-                <p>Email: thepickleguys@gmail.com</p>
-                <p>Phone: (555) 123-PICKLE</p>
-                <p>Follow us on social media for tips, updates, and community events!</p>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: thepickleguys@gmail.com</p>
+                    <p>Phone: (555) 123-PICKLE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../how-to-play/index.html">How to Play</a></li>
+                        <li><a href="../shop/index.html">Shop</a></li>
+                        <li><a href="../near-you/index.html">Courts Near You</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Stay connected for tips, updates, and community events!</p>
+                </div>
             </div>
         </footer>
     </body>
