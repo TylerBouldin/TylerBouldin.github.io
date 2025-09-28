@@ -1,14 +1,12 @@
-/* CSS Variables */
 :root {
-    --primary-blue: #0066cc;
+    --primary-blue: #4a9eff;
     --black: #000000;
     --white: #ffffff;
-    --light-gray: #f0f0f0;
-    --dark-gray: #333333;
-    --border-color: #0066cc;
+    --light-gray: #000000;
+    --dark-gray: #000000;
+    --border-color: #4a9eff;
 }
 
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-blue);
     padding: 20px;
@@ -54,7 +51,6 @@ header h1 {
     font-size: 0.9em;
 }
 
-/* Navigation styles */
 nav {
     background-color: var(--black);
     padding: 0;
@@ -92,7 +88,6 @@ nav a:hover {
     background-color: var(--dark-gray);
 }
 
-/* Main content styles */
 main {
     background-color: var(--white);
     padding: 30px;
@@ -103,15 +98,35 @@ main {
 .content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Near You Layout */
+.content-wrapper h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content-wrapper > p {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
 .near-you-layout {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: flex-start;
     min-height: 400px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .address-section {
@@ -121,27 +136,30 @@ main {
 .address-box {
     background-color: var(--white);
     border: 2px solid var(--primary-blue);
-    padding: 30px;
-    border-radius: 8px;
-    min-height: 200px;
+    padding: 40px;
+    border-radius: 12px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .address-box h3 {
     color: var(--primary-blue);
-    font-size: 1.8em;
-    text-align: left;
-    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
     width: 100%;
+    font-weight: bold;
 }
 
 .court-info {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--light-gray);
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--light-gray);
+    padding-top: 10px;
 }
 
 .court-info:last-child {
@@ -151,14 +169,16 @@ main {
 
 .court-info h4 {
     color: var(--primary-blue);
-    font-size: 1.3em;
-    margin-bottom: 10px;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .court-info p {
     color: var(--dark-gray);
-    margin-bottom: 5px;
-    font-size: 1em;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 .map-section {
@@ -167,27 +187,30 @@ main {
 
 .map-placeholder {
     background-color: var(--light-gray);
-    padding: 30px;
-    border-radius: 8px;
-    min-height: 300px;
+    padding: 40px;
+    border-radius: 12px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .map-placeholder h3 {
     color: var(--primary-blue);
-    font-size: 1.8em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 .map-placeholder p {
     color: var(--dark-gray);
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6;
-    margin-top: 20px;
+    margin-top: 25px;
+    max-width: 500px;
 }
 
 .map-icon {
@@ -207,21 +230,26 @@ main {
 
 .additional-info {
     background-color: var(--light-gray);
-    padding: 30px;
-    border-radius: 8px;
-    margin-top: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .additional-info h3 {
     color: var(--primary-blue);
-    font-size: 1.6em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .additional-info p {
     color: var(--dark-gray);
-    font-size: 1.1em;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .additional-info ul {
@@ -231,15 +259,16 @@ main {
 
 .additional-info li {
     background-color: var(--white);
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
     border-left: 4px solid var(--primary-blue);
     color: var(--dark-gray);
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 1.5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;

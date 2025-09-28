@@ -1,14 +1,12 @@
-/* CSS Variables */
 :root {
-    --primary-blue: #0066cc;
+    --primary-blue: #4a9eff;
     --black: #000000;
     --white: #ffffff;
-    --light-gray: #f0f0f0;
-    --dark-gray: #333333;
-    --border-color: #0066cc;
+    --light-gray: #000000;
+    --dark-gray: #000000;
+    --border-color: #4a9eff;
 }
 
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,6 @@ body {
     flex-direction: column;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-blue);
     padding: 20px;
@@ -56,13 +53,40 @@ header h1 {
     font-size: 0.9em;
 }
 
-/* Navigation styles */
 nav {
     background-color: var(--black);
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 nav ul {
@@ -94,7 +118,6 @@ nav a:hover {
     background-color: var(--dark-gray);
 }
 
-/* Main content styles */
 main {
     background-color: var(--white);
     padding: 0;
@@ -190,7 +213,6 @@ main {
     left: 0;
 }
 
-/* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-blue), #004499);
     color: var(--white);
@@ -273,7 +295,6 @@ main {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Features Section */
 .features-section {
     padding: 60px 30px;
     background-color: var(--light-gray);
@@ -325,7 +346,6 @@ main {
     line-height: 1.6;
 }
 
-/* About Preview Section */
 .about-preview {
     padding: 60px 30px;
     display: flex;
@@ -375,10 +395,89 @@ main {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Services Section */
 .services-section {
     padding: 60px 30px;
     background-color: var(--light-gray);
+}
+
+.gallery-preview {
+    padding: 60px 30px;
+    background-color: var(--white);
+}
+
+.gallery-preview h3 {
+    text-align: center;
+    font-size: 2.4em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.gallery-preview p {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-preview-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-preview-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-preview-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-preview-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: var(--white);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-preview-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.gallery-overlay p {
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
 }
 
 .services-section h3 {
@@ -431,7 +530,6 @@ main {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-blue);
     color: var(--white);
@@ -482,7 +580,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -494,15 +591,28 @@ footer {
         font-size: 2em;
     }
     
+    .hamburger {
+        display: flex;
+    }
+    
     nav ul {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--black);
+    }
+    
+    nav ul.active {
+        display: flex;
     }
     
     .image-text-section {
         flex-direction: column;
     }
     
-    /* Hero Section Mobile */
     .hero-section {
         flex-direction: column;
         text-align: center;
@@ -517,7 +627,6 @@ footer {
         justify-content: center;
     }
     
-    /* Features Mobile */
     .features-grid {
         flex-direction: column;
         align-items: center;
@@ -527,14 +636,12 @@ footer {
         max-width: 100%;
     }
     
-    /* About Preview Mobile */
     .about-preview {
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
     }
     
-    /* Services Mobile */
     .services-grid {
         flex-direction: column;
         align-items: center;
@@ -544,7 +651,19 @@ footer {
         max-width: 100%;
     }
     
-    /* Footer Mobile */
+    .gallery-preview-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gallery-preview {
+        padding: 40px 20px;
+    }
+    
+    .gallery-preview h3 {
+        font-size: 2em;
+    }
+    
     .footer-content {
         flex-direction: column;
         text-align: center;

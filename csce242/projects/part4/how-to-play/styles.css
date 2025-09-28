@@ -1,14 +1,12 @@
-/* CSS Variables */
 :root {
-    --primary-blue: #0066cc;
+    --primary-blue: #4a9eff;
     --black: #000000;
     --white: #ffffff;
-    --light-gray: #f0f0f0;
-    --dark-gray: #333333;
-    --border-color: #0066cc;
+    --light-gray: #000000;
+    --dark-gray: #000000;
+    --border-color: #4a9eff;
 }
 
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-blue);
     padding: 20px;
@@ -54,7 +51,6 @@ header h1 {
     font-size: 0.9em;
 }
 
-/* Navigation styles */
 nav {
     background-color: var(--black);
     padding: 0;
@@ -92,7 +88,6 @@ nav a:hover {
     background-color: var(--dark-gray);
 }
 
-/* Main content styles */
 main {
     background-color: var(--white);
     padding: 30px;
@@ -123,7 +118,6 @@ main {
     margin-right: auto;
 }
 
-/* How To Play Sections */
 .how-to-play-sections {
     display: flex;
     flex-direction: column;
@@ -179,7 +173,6 @@ main {
     border: 2px solid var(--light-gray);
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;

@@ -4,6 +4,7 @@
     <head>
         <title>The Pickleball Guys</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -18,7 +19,12 @@
         </header>
 
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="how-to-play/index.html">How To Play</a></li>
                 <li><a href="shop/index.html">Shop</a></li>
@@ -80,7 +86,7 @@
                         <a href="about-us/index.html" class="learn-more-link">Learn More About Us →</a>
                     </div>
                     <div class="about-image">
-                        <img src="images/thoughtfulpickleball.webp" alt="The Pickleball Guys team">
+                        <img src="images/thoughtfulpickleball.webp  " alt="The Pickleball Guys team">
                     </div>
                 </section>
 
@@ -102,6 +108,35 @@
                             <h4>📍 Court Information</h4>
                             <p>Find local courts, playing groups, and community events in your area. Connect with other players.</p>
                             <a href="near-you/index.html">Find Courts</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery Preview Section -->
+                <section class="gallery-preview">
+                    <h3>Gallery</h3>
+                    <p>Check out our collection of pickleball action shots and community events!</p>
+                    <div class="gallery-preview-grid">
+                        <div class="gallery-preview-item" onclick="window.location.href='gallery/index.html'">
+                            <img src="images/grouppickleball.jpg" alt="Group playing pickleball">
+                            <div class="gallery-overlay">
+                                <h4>Community Play</h4>
+                                <p>View Gallery →</p>
+                            </div>
+                        </div>
+                        <div class="gallery-preview-item" onclick="window.location.href='gallery/index.html'">
+                            <img src="images/teamworkpickle.webp" alt="Teamwork in pickleball">
+                            <div class="gallery-overlay">
+                                <h4>Teamwork</h4>
+                                <p>View Gallery →</p>
+                            </div>
+                        </div>
+                        <div class="gallery-preview-item" onclick="window.location.href='gallery/index.html'">
+                            <img src="images/stratpickle.webp" alt="Strategic play">
+                            <div class="gallery-overlay">
+                                <h4>Strategy</h4>
+                                <p>View Gallery →</p>
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -1,14 +1,12 @@
-/* CSS Variables */
 :root {
-    --primary-blue: #0066cc;
+    --primary-blue: #4a9eff;
     --black: #000000;
     --white: #ffffff;
-    --light-gray: #f0f0f0;
-    --dark-gray: #333333;
-    --border-color: #0066cc;
+    --light-gray: #000000;
+    --dark-gray: #000000;
+    --border-color: #4a9eff;
 }
 
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-blue);
     padding: 20px;
@@ -54,7 +51,6 @@ header h1 {
     font-size: 0.9em;
 }
 
-/* Navigation styles */
 nav {
     background-color: var(--black);
     padding: 0;
@@ -92,7 +88,6 @@ nav a:hover {
     background-color: var(--dark-gray);
 }
 
-/* Main content styles */
 main {
     background-color: var(--white);
     padding: 30px;
@@ -125,7 +120,6 @@ main {
     line-height: 1.6;
 }
 
-/* Shop Grid Layout */
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -145,9 +139,10 @@ main {
     flex-direction: column;
     justify-content: space-between;
     min-height: 350px;
-    border: 2px solid var(--light-gray);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .shop-item:hover {
@@ -167,7 +162,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     border-radius: 8px;
     margin: 10px 0;
     height: 200px;
@@ -180,8 +175,6 @@ main {
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
-    border: 2px solid var(--white);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .item-price {
@@ -189,13 +182,12 @@ main {
     font-size: 1.4em;
     font-weight: bold;
     margin-top: 15px;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 8px 12px;
     border-radius: 6px;
     display: inline-block;
 }
 
-/* Responsive design */
 @media (max-width: 1024px) {
     .shop-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -234,5 +226,126 @@ main {
     .shop-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+.product-detail {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info h2 {
+    color: var(--primary-blue);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.price {
+    color: var(--primary-blue);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: var(--dark-gray);
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.features li {
+    background-color: var(--white);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-blue);
+    color: var(--dark-gray);
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.add-to-cart {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #3a8eef;
+}
+
+.back-to-shop {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.back-to-shop:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+    
+    .product-info h2 {
+        font-size: 2em;
+    }
+    
+    .price {
+        font-size: 1.8em;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

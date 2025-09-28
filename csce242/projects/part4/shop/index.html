@@ -3,7 +3,9 @@
     
     <head>
         <title>Shop - The Pickleball Guys</title>
+        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="styles.css">
+        <script src="../script.js"></script>
     </head>
 
     <body>
@@ -18,7 +20,12 @@
         </header>
 
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../how-to-play/index.html">How To Play</a></li>
                 <li><a href="index.html">Shop</a></li>
@@ -33,72 +40,94 @@
                 <p>Find the perfect gear to improve your game. We offer high-quality paddles, balls, shoes, and accessories for players of all skill levels.</p>
                 
                 <div class="shop-grid">
-                    <div class="shop-item">
+                    <a href="pro-paddle-set.html" class="shop-item">
                         <h3>Pro Paddle Set</h3>
                         <div class="item-image">
                             <img src="../images/proPaddleSet.jpg" alt="Professional pickleball paddle">
                         </div>
                         <p class="item-price">$89.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="pickleball-balls.html" class="shop-item">
                         <h3>Pickleball Balls (6-pack)</h3>
                         <div class="item-image">
                             <img src="../images/pickleBallz.jpg" alt="Pickleball balls">
                         </div>
                         <p class="item-price">$24.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="beginner-paddle.html" class="shop-item">
                         <h3>Beginner Paddle</h3>
                         <div class="item-image">
                             <img src="../images/beginPaddle.webp" alt="Beginner pickleball paddle">
                         </div>
                         <p class="item-price">$45.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="court-shoes.html" class="shop-item">
                         <h3>Court Shoes</h3>
                         <div class="item-image">
                             <img src="../images/pickleShoes.webp" alt="Pickleball court shoes">
                         </div>
                         <p class="item-price">$79.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="paddle-cover.html" class="shop-item">
                         <h3>Paddle Cover</h3>
                         <div class="item-image">
                             <img src="../images/paddleCover.jpeg" alt="Paddle protective cover">
                         </div>
                         <p class="item-price">$19.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="grip-tape.html" class="shop-item">
                         <h3>Grip Tape</h3>
                         <div class="item-image">
                             <img src="../images/pickleGrip.webp" alt="Paddle grip tape">
                         </div>
                         <p class="item-price">$12.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="team-uniform.html" class="shop-item">
                         <h3>Team Uniform</h3>
                         <div class="item-image">
                             <img src="../images/pickleUni.jpg" alt="Pickleball team uniform">
                         </div>
                         <p class="item-price">$39.99</p>
-                    </div>
+                    </a>
                     
-                    <div class="shop-item">
+                    <a href="equipment-bag.html" class="shop-item">
                         <h3>Equipment Bag</h3>
                         <div class="item-image">
                             <img src="../images/bagpick.webp" alt="Pickleball equipment bag">
                         </div>
                         <p class="item-price">$34.99</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: thepickleguys@gmail.com</p>
+                    <p>Phone: (555) 123-PICKLE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../how-to-play/index.html">How to Play</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                        <li><a href="../near-you/index.html">Courts Near You</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Stay connected for tips, updates, and community events!</p>
+                </div>
+            </div>
+        </footer>
     </body>
     
 </html>
