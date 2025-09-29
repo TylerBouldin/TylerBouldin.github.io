@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 11 - Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="w3-container">
+        <h1 class="w3-center" style="color: #008080;">Assignment 11</h1>
+        <h2 class="w3-center" style="color: #8B4513;">Paintings Gallery</h2>
+        
+        <div id="paintings-container" class="painting-grid">
+        </div>
+    </div>
+
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container">
+                <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-artist"></p>
+                <p id="modal-location"></p>
+                <img id="modal-image" class="modal-image" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
