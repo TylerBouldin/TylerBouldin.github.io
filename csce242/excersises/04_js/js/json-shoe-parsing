@@ -1,0 +1,33 @@
+const getShoes = async() => {
+    const url = "https://portiaportia.github.io/json/shoes.json";
+
+    try {
+        const response = await fetch(url);
+        return response.json();
+    }
+    catch(error){
+        console.log("sorry");
+    }
+};
+
+const showShoes = async() => {
+    const shoes = await getShoes();
+    const shoeListDiv = document.getElementById("shoe-list");
+
+    shoes.forEach((shoe)=>{
+        //make a section for each shoe put all the data in, nicely formatted
+        const section = document.createElement("section");
+        
+        section.innerHTML = `
+            <h2>${shoe.name}</h2>
+            <p>${shoe.description}</p>
+            <p>${shoe.price}</p>
+        `;
+        shoeListDiv.appendChild(section);
+        //then append it to the shoe list
+        shoeListDiv.appendChild(shoeSection);
+        console.log(shoe.name);
+    });
+};
+
+showShoes();

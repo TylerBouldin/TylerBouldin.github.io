@@ -1,0 +1,34 @@
+[
+  {
+    "_id": 1,
+    "title": "Easy to Learn",
+    "icon": "🏓",
+    "description": "Pickleball combines the best of tennis, badminton, and ping-pong in an easy-to-learn format that anyone can enjoy.",
+    "category": "Benefits",
+    "img_name": "images/grouppickleball.jpg"
+  },
+  {
+    "_id": 2,
+    "title": "Great Exercise",
+    "icon": "💪",
+    "description": "Get a full-body workout while having fun. Pickleball provides cardiovascular exercise and improves agility and coordination.",
+    "category": "Health",
+    "img_name": "images/teamworkpickle.webp"
+  },
+  {
+    "_id": 3,
+    "title": "Social Activity",
+    "icon": "👥",
+    "description": "Meet new people and build lasting friendships. Pickleball is known for its welcoming and inclusive community.",
+    "category": "Community",
+    "img_name": "images/grouppickleball.jpg"
+  },
+  {
+    "_id": 4,
+    "title": "All Skill Levels",
+    "icon": "🎯",
+    "description": "From beginners to advanced players, pickleball offers challenges and enjoyment for everyone.",
+    "category": "Inclusive",
+    "img_name": "images/thoughtfulpickleball.webp"
+  }
+]
