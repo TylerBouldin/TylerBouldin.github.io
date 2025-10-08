@@ -2,11 +2,22 @@ async function loadShopItems() {
     const url = 'https://tylerbouldin.github.io/csce242/projects/part6/shop/shop-items.json';
     
     try {
+        console.log('Trying to fetch from:', url);
         const response = await fetch(url);
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const items = await response.json();
+        console.log('Loaded items:', items);
         displayItems(items);
     } catch (error) {
         console.log('Error loading shop items:', error);
+        // Show error message on page
+        const shopGrid = document.getElementById('shop-grid');
+        shopGrid.innerHTML = '<p>Error loading products. Please check console for details.</p>';
     }
 }
 
