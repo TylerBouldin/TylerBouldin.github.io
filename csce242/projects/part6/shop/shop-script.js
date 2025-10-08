@@ -1,5 +1,5 @@
 async function loadShopItems() {
-    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/shop/shop-items.json';
+    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/data.json';
     
     try {
         console.log('Trying to fetch from:', url);
@@ -10,9 +10,9 @@ async function loadShopItems() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const items = await response.json();
-        console.log('Loaded items:', items);
-        displayItems(items);
+        const data = await response.json();
+        console.log('Loaded items:', data.shop);
+        displayItems(data.shop);
     } catch (error) {
         console.log('Error loading shop items:', error);
         // Show error message on page

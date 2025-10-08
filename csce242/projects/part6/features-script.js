@@ -1,5 +1,5 @@
 async function loadFeatures() {
-    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/features.json';
+    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/data.json';
     
     try {
         console.log('Trying to fetch from:', url);
@@ -10,9 +10,9 @@ async function loadFeatures() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const features = await response.json();
-        console.log('Loaded features:', features);
-        displayFeatures(features);
+        const data = await response.json();
+        console.log('Loaded features:', data.features);
+        displayFeatures(data.features);
     } catch (error) {
         console.log('Error loading features:', error);
         const featuresContainer = document.getElementById('features-container');

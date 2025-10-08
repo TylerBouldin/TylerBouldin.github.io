@@ -1,0 +1,310 @@
+{
+  "features": [
+    {
+      "_id": 1,
+      "title": "Easy to Learn",
+      "icon": "🏓",
+      "description": "Pickleball combines the best of tennis, badminton, and ping-pong in an easy-to-learn format that anyone can enjoy.",
+      "category": "Benefits",
+      "img_name": "images/grouppickleball.jpg"
+    },
+    {
+      "_id": 2,
+      "title": "Great Exercise",
+      "icon": "💪",
+      "description": "Get a full-body workout while having fun. Pickleball provides cardiovascular exercise and improves agility and coordination.",
+      "category": "Health",
+      "img_name": "images/teamworkpickle.webp"
+    },
+    {
+      "_id": 3,
+      "title": "Social Activity",
+      "icon": "👥",
+      "description": "Meet new people and build lasting friendships. Pickleball is known for its welcoming and inclusive community.",
+      "category": "Community",
+      "img_name": "images/grouppickleball.jpg"
+    },
+    {
+      "_id": 4,
+      "title": "All Skill Levels",
+      "icon": "🎯",
+      "description": "From beginners to advanced players, pickleball offers challenges and enjoyment for everyone.",
+      "category": "Inclusive",
+      "img_name": "images/thoughtfulpickleball.webp"
+    }
+  ],
+  "gallery": [
+    {
+      "_id": 1,
+      "title": "Community Play",
+      "img_name": "../images/grouppickleball.jpg",
+      "description": "Local players enjoying a friendly game",
+      "category": "Community",
+      "type": "Group Activity",
+      "alt_text": "Group playing pickleball"
+    },
+    {
+      "_id": 2,
+      "title": "Teamwork",
+      "img_name": "../images/teamworkpickle.webp",
+      "description": "Players working together on the court",
+      "category": "Strategy",
+      "type": "Doubles Play",
+      "alt_text": "Teamwork in pickleball"
+    },
+    {
+      "_id": 3,
+      "title": "Strategy",
+      "img_name": "../images/stratpickle.webp",
+      "description": "Players planning their next move",
+      "category": "Strategy",
+      "type": "Tactical Play",
+      "alt_text": "Strategic play"
+    },
+    {
+      "_id": 4,
+      "title": "Kitchen Play",
+      "img_name": "../images/kitchenpickleball.webp",
+      "description": "Close-up action in the kitchen area",
+      "category": "Technique",
+      "type": "Net Play",
+      "alt_text": "Kitchen area play"
+    },
+    {
+      "_id": 5,
+      "title": "Serving",
+      "img_name": "../images/servingpickleball.webp",
+      "description": "Perfecting the serve technique",
+      "category": "Technique",
+      "type": "Fundamentals",
+      "alt_text": "Serving technique"
+    },
+    {
+      "_id": 6,
+      "title": "Focus",
+      "img_name": "../images/thoughtfulpickleball.webp",
+      "description": "Players concentrating on their game",
+      "category": "Mental Game",
+      "type": "Concentration",
+      "alt_text": "Thoughtful play"
+    }
+  ],
+  "instructions": [
+    {
+      "_id": 1,
+      "title": "Court Layout",
+      "img_name": "../images/courtdimensions.jpg",
+      "description": "A pickleball court is 20 feet wide and 44 feet long, usually placed within a tennis court. The court is divided into right and left service areas by a center line, with a non-volley zone (kitchen) extending 7 feet from the net on each side. The net is 3 feet high and 7 feet wide.",
+      "category": "Basics",
+      "alt_text": "Pickleball court layout",
+      "order": 1
+    },
+    {
+      "_id": 2,
+      "title": "Saying the Score",
+      "img_name": "../images/cs1.webp",
+      "description": "The player serving must always say the score before hitting the ball. The score is always three numbers. The first number is the serving team's score, the second number is the returning team's score, and the third number is the teammate who is serving the ball.",
+      "category": "Scoring",
+      "alt_text": "Pickleball score calling",
+      "order": 2
+    },
+    {
+      "_id": 3,
+      "title": "Point System",
+      "img_name": "../images/pointsystem.jpg",
+      "description": "Pickleball is either played to 11 or 21 points, and you must win by 2 points. Only the serving team can score points. If the team that did not serve wins the rally, then no point is awarded to either team and the next person in line serves.",
+      "category": "Scoring",
+      "alt_text": "Pickleball scoring system",
+      "order": 3
+    },
+    {
+      "_id": 4,
+      "title": "Serving and Returning Rules",
+      "img_name": "../images/servingpickleball.webp",
+      "description": "Teams get two chances to score except the first serve of the game where they only get one chance to score. The teammate on the right side of the court always serves first and continues serving until their team loses the rally. The other teammate then gets a chance to serve until the team loses a rally and the ball then goes to the opposing team. A serve must be completed in an underhand fashion with the paddle below the waist. The ball must travel over the net without hitting the closer side of the court or the kitchen and land in the opponents diagonal court. Both teams must let the ball bounce once on their side before hitting it. After each team has done this (one bounce per side), the ball can be hit either before or after it bounces.",
+      "category": "Rules",
+      "alt_text": "Pickleball serving technique",
+      "order": 4
+    },
+    {
+      "_id": 5,
+      "title": "Teamwork",
+      "img_name": "../images/teamworkpickle.webp",
+      "description": "Pickleball is typically played as doubles. Good teamwork involves communication, positioning, and covering the court effectively. Partners should work together to control the net and force opponents into difficult shots.",
+      "category": "Strategy",
+      "alt_text": "Pickleball doubles strategy",
+      "order": 5
+    },
+    {
+      "_id": 6,
+      "title": "Kitchen Rules",
+      "img_name": "../images/kitchenpickleball.webp",
+      "description": "The non-volley zone (kitchen) is the 7-foot area on each side of the net. Players cannot volley (hit the ball in the air) while standing in this zone. You must let the ball bounce before hitting it if you're in the kitchen.",
+      "category": "Rules",
+      "alt_text": "Pickleball kitchen rules",
+      "order": 6
+    },
+    {
+      "_id": 7,
+      "title": "Basic Strategy",
+      "img_name": "../images/stratpickle.webp",
+      "description": "Start with a good serve, move to the net when possible, and control the kitchen. Use dinks (soft shots) to keep opponents back, and look for opportunities to hit winners. Stay patient and wait for the right shot.",
+      "category": "Strategy",
+      "alt_text": "Pickleball strategy tips",
+      "order": 7
+    }
+  ],
+  "shop": [
+    {
+      "_id": 1,
+      "name": "Pro Paddle Set",
+      "img_name": "../images/proPaddleSet.jpg",
+      "price": "$89.99",
+      "description": "High-performance paddle set for competitive players",
+      "category": "Paddles",
+      "skill_level": "Advanced",
+      "link": "pro-paddle-set.html"
+    },
+    {
+      "_id": 2,
+      "name": "Pickleball Balls (6-pack)",
+      "img_name": "../images/pickleBallz.jpg",
+      "price": "$24.99",
+      "description": "Durable outdoor pickleballs",
+      "category": "Balls",
+      "skill_level": "All Levels",
+      "link": "pickleball-balls.html"
+    },
+    {
+      "_id": 3,
+      "name": "Beginner Paddle",
+      "img_name": "../images/beginPaddle.webp",
+      "price": "$45.99",
+      "description": "Perfect starter paddle for new players",
+      "category": "Paddles",
+      "skill_level": "Beginner",
+      "link": "beginner-paddle.html"
+    },
+    {
+      "_id": 4,
+      "name": "Court Shoes",
+      "img_name": "../images/pickleShoes.webp",
+      "price": "$79.99",
+      "description": "Comfortable court shoes with great traction",
+      "category": "Footwear",
+      "skill_level": "All Levels",
+      "link": "court-shoes.html"
+    },
+    {
+      "_id": 5,
+      "name": "Paddle Cover",
+      "img_name": "../images/paddleCover.jpeg",
+      "price": "$19.99",
+      "description": "Protective cover for your paddle",
+      "category": "Accessories",
+      "skill_level": "All Levels",
+      "link": "paddle-cover.html"
+    },
+    {
+      "_id": 6,
+      "name": "Grip Tape",
+      "img_name": "../images/pickleGrip.webp",
+      "price": "$12.99",
+      "description": "Non-slip grip tape for better control",
+      "category": "Accessories",
+      "skill_level": "All Levels",
+      "link": "grip-tape.html"
+    },
+    {
+      "_id": 7,
+      "name": "Team Uniform",
+      "img_name": "../images/pickleUni.jpg",
+      "price": "$39.99",
+      "description": "Comfortable team uniform for tournaments",
+      "category": "Apparel",
+      "skill_level": "All Levels",
+      "link": "team-uniform.html"
+    },
+    {
+      "_id": 8,
+      "name": "Equipment Bag",
+      "img_name": "../images/bagpick.webp",
+      "price": "$34.99",
+      "description": "Spacious bag to carry all your gear",
+      "category": "Bags",
+      "skill_level": "All Levels",
+      "link": "equipment-bag.html"
+    }
+  ],
+  "courts": [
+    {
+      "_id": 1,
+      "name": "Community Recreation Center",
+      "img_name": "../images/placeholder.svg",
+      "address": "123 Main Street",
+      "hours": "Open: 6 AM - 10 PM Daily",
+      "courts": "4 outdoor courts, 2 indoor courts",
+      "amenities": "Equipment rental available",
+      "type": "Indoor/Outdoor"
+    },
+    {
+      "_id": 2,
+      "name": "Riverside Park",
+      "img_name": "../images/placeholder.svg",
+      "address": "456 Oak Avenue",
+      "hours": "Open: Dawn to Dusk",
+      "courts": "6 outdoor courts",
+      "amenities": "Free to play, bring your own equipment",
+      "type": "Outdoor"
+    },
+    {
+      "_id": 3,
+      "name": "Sports Complex",
+      "img_name": "../images/placeholder.svg",
+      "address": "789 Pine Street",
+      "hours": "Open: 7 AM - 9 PM",
+      "courts": "8 outdoor courts, 4 indoor courts",
+      "amenities": "Lessons and tournaments available",
+      "type": "Indoor/Outdoor"
+    }
+  ],
+  "groups": [
+    {
+      "_id": 1,
+      "name": "Tuesday Night Pickleball",
+      "location": "Community Center",
+      "time": "6-8 PM",
+      "day": "Tuesday",
+      "skill_level": "All Levels",
+      "description": "Weekly community play"
+    },
+    {
+      "_id": 2,
+      "name": "Weekend Warriors",
+      "location": "Riverside Park",
+      "time": "Saturday 9 AM",
+      "day": "Saturday",
+      "skill_level": "Intermediate",
+      "description": "Weekend morning games"
+    },
+    {
+      "_id": 3,
+      "name": "Beginner's Club",
+      "location": "Sports Complex",
+      "time": "Thursday 7 PM",
+      "day": "Thursday",
+      "skill_level": "Beginner",
+      "description": "Perfect for new players"
+    },
+    {
+      "_id": 4,
+      "name": "Senior Pickleball",
+      "location": "Community Center",
+      "time": "Monday/Wednesday 10 AM",
+      "day": "Monday/Wednesday",
+      "skill_level": "All Ages",
+      "description": "Senior-friendly games"
+    }
+  ]
+}
+

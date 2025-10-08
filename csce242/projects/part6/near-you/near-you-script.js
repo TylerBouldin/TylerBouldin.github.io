@@ -1,27 +1,22 @@
 async function loadCourtsAndGroups() {
-    const courtsUrl = 'https://tylerbouldin.github.io/csce242/projects/part6/near-you/courts.json';
-    const groupsUrl = 'https://tylerbouldin.github.io/csce242/projects/part6/near-you/groups.json';
+    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/data.json';
     
     try {
         console.log('Loading courts and groups...');
         
-        const [courtsResponse, groupsResponse] = await Promise.all([
-            fetch(courtsUrl),
-            fetch(groupsUrl)
-        ]);
+        const response = await fetch(url);
         
-        if (!courtsResponse.ok || !groupsResponse.ok) {
+        if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
         
-        const courts = await courtsResponse.json();
-        const groups = await groupsResponse.json();
+        const data = await response.json();
         
-        console.log('Loaded courts:', courts);
-        console.log('Loaded groups:', groups);
+        console.log('Loaded courts:', data.courts);
+        console.log('Loaded groups:', data.groups);
         
-        displayCourts(courts);
-        displayGroups(groups);
+        displayCourts(data.courts);
+        displayGroups(data.groups);
     } catch (error) {
         console.log('Error loading courts and groups:', error);
         document.getElementById('courts-container').innerHTML = '<p>Error loading court information.</p>';

@@ -1,5 +1,5 @@
 async function loadGalleryItems() {
-    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/gallery/gallery-items.json';
+    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/data.json';
     
     try {
         console.log('Trying to fetch from:', url);
@@ -10,9 +10,9 @@ async function loadGalleryItems() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const items = await response.json();
-        console.log('Loaded gallery items:', items);
-        displayGalleryItems(items);
+        const data = await response.json();
+        console.log('Loaded gallery items:', data.gallery);
+        displayGalleryItems(data.gallery);
     } catch (error) {
         console.log('Error loading gallery items:', error);
         const galleryGrid = document.getElementById('gallery-grid');

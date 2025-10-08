@@ -1,5 +1,5 @@
 async function loadInstructions() {
-    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/how-to-play/instructions.json';
+    const url = 'https://tylerbouldin.github.io/csce242/projects/part6/data.json';
     
     try {
         console.log('Trying to fetch from:', url);
@@ -10,9 +10,9 @@ async function loadInstructions() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const instructions = await response.json();
-        console.log('Loaded instructions:', instructions);
-        displayInstructions(instructions);
+        const data = await response.json();
+        console.log('Loaded instructions:', data.instructions);
+        displayInstructions(data.instructions);
     } catch (error) {
         console.log('Error loading instructions:', error);
         const instructionsContainer = document.getElementById('instructions-container');
