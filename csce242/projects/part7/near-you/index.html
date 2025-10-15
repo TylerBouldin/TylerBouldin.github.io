@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Courts Near You - The Pickleball Guys</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="../script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>The Pickleball Guys</h1>
+                <div class="email">
+                    <span class="envelope">✉</span>
+                    thepickleguys@gmail.com
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../how-to-play/index.html">How To Play</a></li>
+                <li><a href="../shop/index.html">Shop</a></li>
+                <li><a href="index.html">Near you</a></li>
+                <li><a href="../about-us/index.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content-wrapper">
+                <h2>Find Pickleball Courts Near You</h2>
+                <p>Discover local pickleball courts, community centers, and playing groups in your area. Join the pickleball community and start playing today!</p>
+                
+                <div class="near-you-layout">
+                    <div class="address-section">
+                        <div class="address-box">
+                            <h3>Popular Local Courts</h3>
+                            <div id="courts-container">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-section">
+                        <div class="map-container">
+                            <h3>Court Locations Map</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743316.0856735662!2d-81.85990858363522!3d33.97895463913209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f891004325bbef%3A0x44e618e83f105eb8!2sGibson%20Road%20Pickleball!5e1!3m2!1sen!2sus!4v1760568520236!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <h3>Join Local Groups</h3>
+                    <p>Connect with other pickleball players in your area:</p>
+                    <ul id="groups-container">
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: thepickleguys@gmail.com</p>
+                    <p>Phone: (555) 123-PICKLE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../how-to-play/index.html">How to Play</a></li>
+                        <li><a href="../shop/index.html">Shop</a></li>
+                        <li><a href="index.html">Courts Near You</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Stay connected for tips, updates, and community events!</p>
+                </div>
+            </div>
+        </footer>
+        <script src="near-you-script.js"></script>
+    </body>
+    
+</html>
